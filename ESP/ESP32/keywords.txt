@@ -1,0 +1,103 @@
+######################################
+# FOTA-Client-ESP32 — keywords.txt
+# Arduino IDE syntax highlighting map
+#
+# Format:  <keyword><TAB><category>
+# KEYWORD1 class / type name  (orange)
+# KEYWORD2 method / function  (brown)
+# LITERAL1 constant           (teal)
+######################################
+
+#######################################
+# Data types
+#######################################
+
+FotaClient	KEYWORD1
+FotaResult	KEYWORD1
+FotaManifest	KEYWORD1
+FotaPublicKey	KEYWORD1
+FotaEventCallback	KEYWORD1
+FotaState	KEYWORD1
+FotaStats	KEYWORD1
+DeviceAuth	KEYWORD1
+DevicePKI	KEYWORD1
+PKIResult	KEYWORD1
+
+#######################################
+# Methods and functions
+#######################################
+
+begin	KEYWORD2
+setAuthToken	KEYWORD2
+setDeviceId	KEYWORD2
+setCACert	KEYWORD2
+setPublicKey	KEYWORD2
+fetchPublicKey	KEYWORD2
+checkForUpdate	KEYWORD2
+performUpdate	KEYWORD2
+reportProgress	KEYWORD2
+onEvent	KEYWORD2
+setRetryCount	KEYWORD2
+setRetryDelay	KEYWORD2
+getState	KEYWORD2
+getStats	KEYWORD2
+resetStats	KEYWORD2
+isUpdating	KEYWORD2
+lastError	KEYWORD2
+fotaResultStr	KEYWORD2
+setServerUrl	KEYWORD2
+setApiPrefix	KEYWORD2
+setDeviceSecret	KEYWORD2
+ensureValid	KEYWORD2
+authenticate	KEYWORD2
+applyTo	KEYWORD2
+isTokenValid	KEYWORD2
+getTokenExpiry	KEYWORD2
+loadFromNVS	KEYWORD2
+saveToNVS	KEYWORD2
+clearNVS	KEYWORD2
+setClientCert	KEYWORD2
+setClientKey	KEYWORD2
+generateKeyPair	KEYWORD2
+generateCSR	KEYWORD2
+submitCSR	KEYWORD2
+storeCertificate	KEYWORD2
+hasValidCert	KEYWORD2
+clearCredentials	KEYWORD2
+provision	KEYWORD2
+pkiResultStr	KEYWORD2
+
+#######################################
+# Constants / compile-time macros
+#######################################
+
+FOTA_SERVER_URL	LITERAL1
+FOTA_API_PREFIX	LITERAL1
+FOTA_HARDWARE_MODEL	LITERAL1
+FOTA_CURRENT_VERSION	LITERAL1
+FOTA_AUTH_TOKEN	LITERAL1
+FOTA_DEVICE_ID	LITERAL1
+FOTA_SERVER_CA_CERT	LITERAL1
+FOTA_SIGNING_PUBLIC_KEY	LITERAL1
+FOTA_AUTO_FETCH_PUBLIC_KEY	LITERAL1
+FOTA_VERIFY_SHA256	LITERAL1
+FOTA_VERIFY_SIGNATURE	LITERAL1
+FOTA_REPORT_PROGRESS	LITERAL1
+FOTA_HTTP_TIMEOUT_MS	LITERAL1
+FOTA_CONNECT_TIMEOUT_MS	LITERAL1
+FOTA_DOWNLOAD_TIMEOUT_MS	LITERAL1
+FOTA_MAX_FIRMWARE_SIZE	LITERAL1
+FOTA_URL_EXPIRY_MARGIN_S	LITERAL1
+FOTA_RETRY_COUNT	LITERAL1
+FOTA_RETRY_DELAY_MS	LITERAL1
+FOTA_USER_AGENT	LITERAL1
+FOTA_REBOOT_ON_SUCCESS	LITERAL1
+FOTA_ROLLBACK_ENABLED	LITERAL1
+FOTA_WATCHDOG_FEED	LITERAL1
+FOTA_LOG_LEVEL	LITERAL1
+DEVICE_AUTH_SERVER_URL	LITERAL1
+DEVICE_AUTH_DEVICE_ID	LITERAL1
+DEVICE_AUTH_DEVICE_SECRET	LITERAL1
+DEVICE_AUTH_API_PREFIX	LITERAL1
+DEVICE_AUTH_NVS_NS	LITERAL1
+DEVICE_AUTH_REAUTH_MARGIN	LITERAL1

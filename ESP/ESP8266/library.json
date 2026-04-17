@@ -1,0 +1,52 @@
+{
+  "name": "FOTA-Client-ESP8266",
+  "version": "1.0.0",
+  "description": "Secure OTA firmware update client for ESP8266. SHA-256 integrity + ECDSA/RSA signature verification, retry with back-off, lifecycle event callbacks, state machine, watchdog safety.",
+  "keywords": [
+    "ota",
+    "fota",
+    "firmware",
+    "update",
+    "esp8266",
+    "iot",
+    "security",
+    "tls",
+    "bearssl",
+    "ecdsa",
+    "nodewave"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodewave/fota"
+  },
+  "authors": [
+    {
+      "name": "NodeWave",
+      "email": "dev@nodewave.io",
+      "url": "https://github.com/nodewave",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nodewave/fota",
+  "export": {
+    "include": "src"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif8266",
+  "supportedChips": [
+    "esp8266"
+  ],
+  "dependencies": {
+    "bblanchon/ArduinoJson": ">=7.0.0"
+  },
+  "examples": [
+    "examples/"
+  ],
+  "build": {
+    "srcFilter": [
+      "+<*.cpp>",
+      "+<*.c>"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+	"name": "FOTA-Client-ESP32",
+	"version": "1.0.0",
+	"description": "Secure OTA firmware update client for ESP32. SHA-256 integrity + ECDSA/Ed25519/RSA signature verification, retry with back-off, lifecycle event callbacks, state machine, OTA rollback protection, watchdog safety.",
+	"keywords": [
+		"ota",
+		"fota",
+		"firmware",
+		"update",
+		"esp32",
+		"iot",
+		"security",
+		"tls",
+		"ecdsa",
+		"ed25519",
+		"mbedtls",
+		"nodewave"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nodewave/fota"
+	},
+	"authors": [
+		{
+			"name": "NodeWave",
+			"email": "dev@nodewave.io",
+			"url": "https://github.com/nodewave",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/nodewave/fota",
+	"export": {
+		"include": "src"
+	},
+	"frameworks": "arduino",
+	"platforms": "espressif32",
+	"supportedChips": [
+		"esp32",
+		"esp32s2",
+		"esp32s3",
+		"esp32c3",
+		"esp32c6",
+		"esp32h2",
+		"esp32c2"
+	],
+	"dependencies": {
+		"bblanchon/ArduinoJson": ">=7.0.0"
+	},
+	"examples": [
+		"examples/"
+	],
+	"build": {
+		"srcFilter": [
+			"+<*.cpp>",
+			"+<*.c>"
+		]
+	}
+}

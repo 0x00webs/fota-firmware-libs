@@ -1,0 +1,62 @@
+#######################################
+# Syntax Coloring Map For FOTA-Client-ESP8266
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+FotaClient	KEYWORD1
+FotaResult	KEYWORD1
+FotaManifest	KEYWORD1
+FotaPublicKey	KEYWORD1
+FotaState	KEYWORD1
+FotaStats	KEYWORD1
+FotaEventCallback	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+setAuthToken	KEYWORD2
+setDeviceId	KEYWORD2
+setCACert	KEYWORD2
+setClientCert	KEYWORD2
+setClientKey	KEYWORD2
+setPublicKey	KEYWORD2
+fetchPublicKey	KEYWORD2
+checkForUpdate	KEYWORD2
+performUpdate	KEYWORD2
+onEvent	KEYWORD2
+setRetryCount	KEYWORD2
+setRetryDelay	KEYWORD2
+getState	KEYWORD2
+getStats	KEYWORD2
+resetStats	KEYWORD2
+reportProgress	KEYWORD2
+lastError	KEYWORD2
+checkIntervalSecs	KEYWORD2
+fotaVerifySha256	KEYWORD2
+fotaVerifySha256Digest	KEYWORD2
+fotaVerifySignature	KEYWORD2
+fotaBase64Decode	KEYWORD2
+fotaResultStr	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FotaResult_OK	LITERAL1
+FotaResult_NO_UPDATE	LITERAL1
+FotaResult_ERR_WIFI	LITERAL1
+FotaResult_ERR_HTTP	LITERAL1
+FotaResult_ERR_JSON	LITERAL1
+FotaResult_ERR_SHA256	LITERAL1
+FotaResult_ERR_SIGNATURE	LITERAL1
+FotaResult_ERR_FLASH	LITERAL1
+FotaResult_ERR_SIZE	LITERAL1
+FotaResult_ERR_TOKEN	LITERAL1
+FotaResult_ERR_PUBKEY	LITERAL1
+FotaResult_ERR_ALGO	LITERAL1
+FotaResult_ERR_DOWNLOAD	LITERAL1
+FotaResult_ERR_ALLOC	LITERAL1
+FotaResult_ERR_PROGRESS	LITERAL1
+FotaResult_ERR_EXPIRED	LITERAL1
